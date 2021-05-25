@@ -46,19 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Wochenplan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Wochenplan.Designer.cs">
+      <DependentUpon>Wochenplan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Wochenplan.resx">
+      <DependentUpon>Wochenplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\SpeisenZutaten.resx">
+      <DependentUpon>SpeisenZutaten.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\HinzufuegenBearbeiten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\HinzufuegenBearbeiten.Designer.cs">
+      <DependentUpon>HinzufuegenBearbeiten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\SpeisenZutaten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\SpeisenZutaten.Designer.cs">
+      <DependentUpon>SpeisenZutaten.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>

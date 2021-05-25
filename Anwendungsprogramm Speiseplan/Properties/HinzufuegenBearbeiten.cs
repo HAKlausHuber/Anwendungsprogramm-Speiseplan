@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Anwendungsprogramm_Speiseplan
+namespace Anwendungsprogramm_Speiseplan.Properties
 {
-    public partial class Form1 : Form
+    public partial class HinzufuegenBearbeiten : Form
     {
-        public Form1()
+        public HinzufuegenBearbeiten()
         {
             InitializeComponent();
         }
