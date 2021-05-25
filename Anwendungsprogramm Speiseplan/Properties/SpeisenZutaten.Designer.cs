@@ -39,28 +39,43 @@
             this.hinzufügenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bearbeitenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.löschenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(62, 105);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(322, 255);
+            this.listView1.Size = new System.Drawing.Size(322, 313);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // listView2
             // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(436, 105);
+            this.listView2.Location = new System.Drawing.Point(436, 267);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(322, 255);
+            this.listView2.Size = new System.Drawing.Size(322, 151);
             this.listView2.TabIndex = 1;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -129,11 +144,54 @@
             this.löschenToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.löschenToolStripMenuItem1.Text = "Löschen";
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Bezeichnung";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Bild";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Bezeichnung";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Gang";
+            // 
+            // listView3
+            // 
+            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9});
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(436, 105);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(322, 151);
+            this.listView3.TabIndex = 3;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.listView3.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Bezeichnung";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Beschreibung";
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Einheit";
+            // 
             // SpeisenZutaten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 459);
+            this.Controls.Add(this.listView3);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.menuStrip1);
@@ -160,5 +218,13 @@
         private System.Windows.Forms.ToolStripMenuItem hinzufügenToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem bearbeitenToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem löschenToolStripMenuItem1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
     }
 }
