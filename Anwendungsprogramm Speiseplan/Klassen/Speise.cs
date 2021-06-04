@@ -3,19 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Anwendungsprogramm_Speiseplan.Klassen;
 
-namespace Anwendungsprogramm_Speiseplan.Properties
+namespace Anwendungsprogramm_Speiseplan.Klassen
 {
-    class Zutat
+    public class Speise
     {
-        private int zid;
         private string bezeichnung;
         private string beschreibung;
         private string einheit;
+        private List<Zutat> zutaten;
+        private List<Allergene> allergene;
 
-        public Zutat(int zid, string bezeichnung, string beschreibung, string einheit)
+        //private int stern5;
+        //private int stern4;
+        //private int stern3;
+        //private int stern2;
+        //private int stern1;
+
+        public Speise()
         {
 
+        }
+
+        public Speise(int sid, string bezeichnung, string beschreibung, string einheit)
+        {
             this.bezeichnung = bezeichnung;
             this.beschreibung = beschreibung;
             this.einheit = einheit;
@@ -26,6 +38,5 @@ namespace Anwendungsprogramm_Speiseplan.Properties
         public string Beschreibung { get; set; }
 
         public string Einheit { get; set; }
-
     }
 }

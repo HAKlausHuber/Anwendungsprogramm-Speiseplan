@@ -46,37 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\Zutat.cs" />
-    <Compile Include="Wochenplan.cs">
+    <Compile Include="Klassen\Allergene.cs" />
+    <Compile Include="Klassen\Speise.cs" />
+    <Compile Include="Formen\frmWochenplan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Wochenplan.Designer.cs">
-      <DependentUpon>Wochenplan.cs</DependentUpon>
+    <Compile Include="Formen\frmWochenplan.Designer.cs">
+      <DependentUpon>frmWochenplan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Klassen\Zutat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Wochenplan.resx">
-      <DependentUpon>Wochenplan.cs</DependentUpon>
+    <EmbeddedResource Include="Formen\frmHinzufuegenBearbeiten.resx">
+      <DependentUpon>frmHinzufuegenBearbeiten.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\SpeisenZutaten.resx">
-      <DependentUpon>SpeisenZutaten.cs</DependentUpon>
+    <EmbeddedResource Include="Formen\frmWochenplan.resx">
+      <DependentUpon>frmWochenplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\frmSpeisenZutaten.resx">
+      <DependentUpon>frmSpeisenZutaten.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\HinzufuegenBearbeiten.cs">
+    <Compile Include="Formen\frmHinzufuegenBearbeiten.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Properties\HinzufuegenBearbeiten.Designer.cs">
-      <DependentUpon>HinzufuegenBearbeiten.cs</DependentUpon>
+    <Compile Include="Formen\frmHinzufuegenBearbeiten.Designer.cs">
+      <DependentUpon>frmHinzufuegenBearbeiten.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\SpeisenZutaten.cs">
+    <Compile Include="Formen\frmSpeisenZutaten.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Properties\SpeisenZutaten.Designer.cs">
-      <DependentUpon>SpeisenZutaten.cs</DependentUpon>
+    <Compile Include="Formen\frmSpeisenZutaten.Designer.cs">
+      <DependentUpon>frmSpeisenZutaten.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
