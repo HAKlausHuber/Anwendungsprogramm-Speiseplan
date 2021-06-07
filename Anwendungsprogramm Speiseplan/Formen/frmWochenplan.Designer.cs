@@ -50,6 +50,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnNeuPlan = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -215,11 +216,21 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // btnNeuPlan
+            // 
+            this.btnNeuPlan.Location = new System.Drawing.Point(37, 35);
+            this.btnNeuPlan.Name = "btnNeuPlan";
+            this.btnNeuPlan.Size = new System.Drawing.Size(113, 23);
+            this.btnNeuPlan.TabIndex = 9;
+            this.btnNeuPlan.Text = "Neuer Wochenplan";
+            this.btnNeuPlan.UseVisualStyleBackColor = true;
+            // 
             // Wochenplan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 353);
+            this.Controls.Add(this.btnNeuPlan);
             this.Controls.Add(this.btnBewerten3);
             this.Controls.Add(this.btnBewerten2);
             this.Controls.Add(this.btnBewerten1);
@@ -271,6 +282,7 @@
         private System.Windows.Forms.Button btnBewerten3;
         internal System.Windows.Forms.DateTimePicker dateTimePicker1;
         internal System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button btnNeuPlan;
     }
 }
 
