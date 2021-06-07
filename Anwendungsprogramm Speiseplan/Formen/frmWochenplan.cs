@@ -17,7 +17,21 @@ namespace Anwendungsprogramm_Speiseplan
             InitializeComponent();
         }
 
-        private void speiseZutatenAnzeigenToolStripMenuItem_Click(object sender, EventArgs e)
+        #region Variablen        
+        #endregion
+
+        #region Methoden
+        #endregion
+
+        #region Code
+        private void Wochenplan_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show(new System.DateTime(1996, 1, 3).ToString());
+        }
+
+        #endregion
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

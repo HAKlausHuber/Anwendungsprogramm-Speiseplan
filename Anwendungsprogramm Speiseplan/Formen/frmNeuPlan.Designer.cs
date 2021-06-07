@@ -29,27 +29,29 @@ namespace Anwendungsprogramm_Speiseplan.Formen
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpMontag = new System.Windows.Forms.DateTimePicker();
+            this.dtpFreitag = new System.Windows.Forms.DateTimePicker();
             this.lblVon = new System.Windows.Forms.Label();
             this.lblBis = new System.Windows.Forms.Label();
             this.btnBestaetigen = new System.Windows.Forms.Button();
             this.btnAbbrechen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // dtpMontag
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(57, 71);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dtpMontag.Location = new System.Drawing.Point(57, 71);
+            this.dtpMontag.Name = "dtpMontag";
+            this.dtpMontag.Size = new System.Drawing.Size(200, 20);
+            this.dtpMontag.TabIndex = 0;
+            this.dtpMontag.ValueChanged += new System.EventHandler(this.dtpMontag_ValueChanged);
             // 
-            // dateTimePicker2
+            // dtpFreitag
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(316, 71);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 0;
+            this.dtpFreitag.Location = new System.Drawing.Point(316, 71);
+            this.dtpFreitag.Name = "dtpFreitag";
+            this.dtpFreitag.Size = new System.Drawing.Size(200, 20);
+            this.dtpFreitag.TabIndex = 0;
+            this.dtpFreitag.ValueChanged += new System.EventHandler(this.dtpFreitag_ValueChanged);
             // 
             // lblVon
             // 
@@ -77,6 +79,7 @@ namespace Anwendungsprogramm_Speiseplan.Formen
             this.btnBestaetigen.TabIndex = 3;
             this.btnBestaetigen.Text = "Bestätigen";
             this.btnBestaetigen.UseVisualStyleBackColor = true;
+            this.btnBestaetigen.Click += new System.EventHandler(this.btnBestaetigen_Click);
             // 
             // btnAbbrechen
             // 
@@ -86,6 +89,7 @@ namespace Anwendungsprogramm_Speiseplan.Formen
             this.btnAbbrechen.TabIndex = 3;
             this.btnAbbrechen.Text = "Abbrechen";
             this.btnAbbrechen.UseVisualStyleBackColor = true;
+            this.btnAbbrechen.Click += new System.EventHandler(this.btnAbbrechen_Click);
             // 
             // frmNeuPlan
             // 
@@ -96,10 +100,11 @@ namespace Anwendungsprogramm_Speiseplan.Formen
             this.Controls.Add(this.btnBestaetigen);
             this.Controls.Add(this.lblBis);
             this.Controls.Add(this.lblVon);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFreitag);
+            this.Controls.Add(this.dtpMontag);
             this.Name = "frmNeuPlan";
             this.Text = "frmNeuPlan";
+            this.Load += new System.EventHandler(this.frmNeuPlan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,8 +112,8 @@ namespace Anwendungsprogramm_Speiseplan.Formen
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpMontag;
+        private System.Windows.Forms.DateTimePicker dtpFreitag;
         private System.Windows.Forms.Label lblVon;
         private System.Windows.Forms.Label lblBis;
         private System.Windows.Forms.Button btnBestaetigen;

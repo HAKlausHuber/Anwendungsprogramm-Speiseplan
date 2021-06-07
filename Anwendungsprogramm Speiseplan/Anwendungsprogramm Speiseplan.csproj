@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formen\frmBewertung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formen\frmBewertung.Designer.cs">
+      <DependentUpon>frmBewertung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formen\frmNeuPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formen\frmNeuPlan.Designer.cs">
+      <DependentUpon>frmNeuPlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Klassen\Allergene.cs" />
     <Compile Include="Klassen\Speise.cs" />
     <Compile Include="Formen\frmWochenplan.cs">
@@ -57,8 +69,14 @@
     <Compile Include="Klassen\Zutat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formen\frmBewertung.resx">
+      <DependentUpon>frmBewertung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formen\frmHinzufuegenBearbeiten.resx">
       <DependentUpon>frmHinzufuegenBearbeiten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\frmNeuPlan.resx">
+      <DependentUpon>frmNeuPlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formen\frmWochenplan.resx">
       <DependentUpon>frmWochenplan.cs</DependentUpon>
@@ -86,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +118,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emptyStars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullStars.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
